@@ -1,0 +1,252 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amazon Clone - Checkout</title>
+
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="checkout-header">
+
+        <div class="logo">
+            amazon<span>.in</span>
+        </div>
+
+        <div class="secure">
+            🔒 Secure Checkout
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="checkout-container">
+
+        <div class="checkout-left">
+
+
+            <!-- DELIVERY ADDRESS -->
+            <section class="checkout-box">
+
+                <h2>1. Delivery Address</h2>
+
+                <div class="address-form">
+
+                    <!-- NAME + MOBILE -->
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="full-name">
+                                Full Name
+                            </label>
+
+                            <input type="text" id="full-name" placeholder="Enter your name">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="mobile">
+                                Mobile Number
+                            </label>
+
+                            <input type="tel" id="mobile" placeholder="10-digit mobile number" maxlength="10">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ADDRESS -->
+                    <div class="form-group">
+
+                        <label for="address">
+                            Address
+                        </label>
+
+                        <textarea id="address" placeholder="House No., Street, Area"></textarea>
+
+                    </div>
+
+
+                    <!-- CITY + STATE + PIN -->
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <input type="text" id="city" placeholder="Enter city">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="state">
+                                State
+                            </label>
+
+                            <input type="text" id="state" placeholder="Enter state">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="pincode">
+                                PIN Code
+                            </label>
+
+                            <input type="text" id="pincode" placeholder="6-digit PIN" maxlength="6">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- PAYMENT -->
+            <section class="checkout-box">
+
+                <h2>2. Payment Method</h2>
+
+
+                <label class="payment-option">
+
+                    <input type="radio" name="payment" value="cod" checked>
+
+                    Cash on Delivery
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input type="radio" name="payment" value="upi">
+
+                    UPI
+
+                </label>
+
+
+                <label class="payment-option">
+
+                    <input type="radio" name="payment" value="card">
+
+                    Credit / Debit Card
+
+                </label>
+
+            </section>
+
+
+
+            <!-- REVIEW ITEMS -->
+            <section class="checkout-box">
+
+                <h2>3. Review Items</h2>
+
+                <div id="checkout-items">
+
+                    <!-- Products will come from JavaScript -->
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+        <aside class="order-summary">
+
+            <h2>Order Summary</h2>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Items:
+                </span>
+
+                <span id="summary-items">
+                    0
+                </span>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Delivery:
+                </span>
+
+                <span class="free">
+                    FREE
+                </span>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="summary-total">
+
+                <span>
+                    Order Total:
+                </span>
+
+                <span id="summary-total">
+                    ₹0
+                </span>
+
+            </div>
+
+
+            <button id="place-order">
+
+                Place Your Order
+
+            </button>
+
+
+            <p class="secure-text">
+
+                🔒 Your order is safe and secure.
+
+            </p>
+
+        </aside>
+
+
+    </main>
+
+
+
+    <script src="checkout.js"></script>
+
+</body>
+
+</html>
+```

@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeded;
+    color: #111;
+}
+
+
+/* ===============================
+   HEADER
+================================ */
+
+.success-header {
+    height: 70px;
+
+    background-color: #131921;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 8%;
+}
+
+
+.logo {
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+.logo span {
+    color: #ff9900;
+}
+
+
+.secure {
+    font-size: 16px;
+}
+
+
+
+/* ===============================
+   MAIN
+================================ */
+
+.success-container {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 30px auto;
+}
+
+
+
+/* ===============================
+   SUCCESS MESSAGE
+================================ */
+
+.success-message {
+    background-color: white;
+
+    text-align: center;
+
+    padding: 35px;
+
+    border-radius: 6px;
+
+    margin-bottom: 20px;
+}
+
+
+.success-icon {
+    width: 60px;
+
+    height: 60px;
+
+    margin: auto;
+
+    background-color: #067d62;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 35px;
+
+    font-weight: bold;
+}
+
+
+.success-message h1 {
+    margin-top: 15px;
+
+    color: #067d62;
+
+    font-size: 28px;
+}
+
+
+.success-message p {
+    margin-top: 8px;
+
+    color: #555;
+}
+
+
+
+/* ===============================
+   ORDER CARD
+================================ */
+
+.order-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 6px;
+}
+
+
+
+/* ===============================
+   ORDER TOP
+================================ */
+
+.order-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.order-top div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.label {
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+.order-top strong {
+    color: #111;
+
+    font-size: 16px;
+}
+
+
+#order-total {
+    color: #b12704;
+
+    font-size: 20px;
+}
+
+
+hr {
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin: 25px 0;
+}
+
+
+
+/* ===============================
+   DETAILS
+================================ */
+
+.details-section h2 {
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+.details-section p {
+    margin-bottom: 8px;
+
+    line-height: 1.5;
+}
+
+
+.details-section strong {
+    margin-right: 5px;
+}
+
+
+
+/* ===============================
+   ORDERED ITEMS
+================================ */
+
+.success-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.success-item:last-child {
+    border-bottom: none;
+}
+
+
+.success-item-name {
+    font-weight: bold;
+}
+
+
+.success-item-quantity {
+    color: #666;
+
+    font-size: 14px;
+
+    margin-top: 5px;
+}
+
+
+.success-item-price {
+    color: #b12704;
+
+    font-weight: bold;
+}
+
+
+
+/* ===============================
+   DELIVERY
+================================ */
+
+.delivery-box {
+    background-color: #f7f7f7;
+
+    padding: 20px;
+
+    border-radius: 5px;
+}
+
+
+.delivery-box h2 {
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+
+.delivery-box p {
+    color: #067d62;
+
+    font-weight: bold;
+}
+
+
+
+/* ===============================
+   BUTTON
+================================ */
+
+.success-buttons {
+    margin-top: 25px;
+
+    text-align: center;
+}
+
+
+#continue-shopping {
+    background-color: #ffd814;
+
+    border: 1px solid #fcd200;
+
+    padding: 12px 30px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    font-size: 15px;
+}
+
+
+#continue-shopping:hover {
+    background-color: #f7ca00;
+}
+
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .success-header {
+        padding: 0 20px;
+    }
+
+
+    .logo {
+        font-size: 24px;
+    }
+
+
+    .secure {
+        font-size: 13px;
+    }
+
+
+    .success-container {
+        width: 95%;
+    }
+
+
+    .order-card {
+        padding: 20px;
+    }
+
+
+    .order-top {
+        flex-direction: column;
+    }
+
+
+    .success-message h1 {
+        font-size: 22px;
+    }
+
+}

@@ -1,0 +1,229 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Confirmed - Amazon Clone</title>
+
+    <link rel="stylesheet" href="order-success.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="success-header">
+
+        <div class="logo">
+            amazon<span>.in</span>
+        </div>
+
+        <div class="secure">
+            🔒 Secure
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main class="success-container">
+
+
+        <!-- SUCCESS MESSAGE -->
+
+        <section class="success-message">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h1>
+                Order Placed Successfully!
+            </h1>
+
+            <p>
+                Thank you for shopping with us.
+            </p>
+
+            <p>
+                Your order has been confirmed.
+            </p>
+
+        </section>
+
+
+
+        <!-- ORDER DETAILS -->
+
+        <section class="order-card">
+
+            <div class="order-top">
+
+                <div>
+
+                    <span class="label">
+                        Order ID
+                    </span>
+
+                    <strong id="order-id">
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span class="label">
+                        Order Total
+                    </span>
+
+                    <strong id="order-total">
+                        ₹0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <hr>
+
+
+
+            <!-- CUSTOMER -->
+
+            <div class="details-section">
+
+                <h2>
+                    Delivery Details
+                </h2>
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="customer-name"></span>
+                </p>
+
+                <p>
+                    <strong>Mobile:</strong>
+                    <span id="customer-mobile"></span>
+                </p>
+
+                <p>
+                    <strong>Address:</strong>
+                    <span id="customer-address"></span>
+                </p>
+
+                <p>
+                    <strong>City:</strong>
+                    <span id="customer-city"></span>
+                </p>
+
+                <p>
+                    <strong>State:</strong>
+                    <span id="customer-state"></span>
+                </p>
+
+                <p>
+                    <strong>PIN Code:</strong>
+                    <span id="customer-pincode"></span>
+                </p>
+
+            </div>
+
+
+
+            <hr>
+
+
+
+            <!-- PAYMENT -->
+
+            <div class="details-section">
+
+                <h2>
+                    Payment Method
+                </h2>
+
+                <p id="payment-method">
+                    Cash on Delivery
+                </p>
+
+            </div>
+
+
+
+            <hr>
+
+
+
+            <!-- PRODUCTS -->
+
+            <div class="details-section">
+
+                <h2>
+                    Ordered Items
+                </h2>
+
+                <div id="ordered-items">
+
+                </div>
+
+            </div>
+
+
+
+            <hr>
+
+
+
+            <!-- DELIVERY -->
+
+            <div class="delivery-box">
+
+                <h2>
+                    📦 Estimated Delivery
+                </h2>
+
+                <p id="delivery-date">
+                    Loading...
+                </p>
+
+            </div>
+
+
+
+            <!-- BUTTONS -->
+
+            <div class="success-buttons">
+
+                <button id="continue-shopping">
+                    Continue Shopping
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="order-success.js"></script>
+
+</body>
+
+</html>
+```
